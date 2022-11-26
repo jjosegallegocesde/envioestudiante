@@ -1,0 +1,29 @@
+<header>
+    <app-menu></app-menu>
+</header>
+
+<div class="baner">
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-7">
+                <app-formareserva></app-formareserva>
+            </div>
+        </div>
+    </div>
+    
+</div>
+
+<section>
+   <div class="container my-5">
+    <div class="row row-cols-1 row-cols-3 g-3">
+        <div class="col" *ngFor="let auxiliar of habitaciones">
+            <div class="carh h-100 shadow">
+                <img src={{auxiliar.fotografias[0]}} alt="" class="img-fluid w-100 h-100 ">
+                <h1>{{auxiliar.nombre}}</h1>
+            </div>
+        </div>
+
+    </div>
+   </div>
+</section>
